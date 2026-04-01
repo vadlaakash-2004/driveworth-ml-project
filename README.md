@@ -23,7 +23,7 @@ The dataset contains information about used cars, including key features such as
 The target variable is **selling_price**, which represents the market price of the car in INR.
 
 After preprocessing, categorical variables were converted using one-hot encoding, resulting in multiple derived features.
-## ⚙️ Project Workflow
+## Project Workflow
 
 1. Problem statement 
 2. Libraries  
@@ -35,7 +35,7 @@ After preprocessing, categorical variables were converted using one-hot encoding
 8. Model Evaluation
 9. Model saving (joblib) 
 10. model script
-## 🤖 Models Used
+##  Models Used
 
 - Linear Regression  
 - Ridge Regression  
@@ -47,4 +47,13 @@ After preprocessing, categorical variables were converted using one-hot encoding
 - XGBoost  
 - LightGBM  
 - CatBoost  
+##  Best Model
 
+The **CatBoost Regressor** performed the best among all models.
+
+###  Performance Metrics:
+- R² Score: 0.958  
+- MAE: ~87,000  
+- RMSE: ~177,000  
+
+The model showed strong generalization with minimal overfitting.
