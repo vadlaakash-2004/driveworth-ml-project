@@ -1,5 +1,5 @@
 # Tittle
-Data-Driven Used Car Price Prediction Using Machine Learning
+driveworth: Data-Driven Used Car Price Prediction Using Machine Learning
 ## Problem Statement
 
 The objective of the project is to design a machine learning system that can effectively predict the selling price of used cars based on different factors such as age of the car, kilometers traveled, type of fuel, type of transmission, capacity of the car’s engine, mileage, brand, and model of the car.
@@ -57,3 +57,61 @@ The **CatBoost Regressor** performed the best among all models.
 - RMSE: ~177,000  
 
 The model showed strong generalization with minimal overfitting.
+##  Real-World Testing
+
+The model was tested on real-world car listings.
+
+Example:
+- Hyundai Creta (1 year old)
+- Real Price: ₹13–16 lakh  
+- Predicted Price: ~₹12 lakh
+### Insight:
+The model tends to underestimate newer cars due to dataset bias and missing features like condition, variant, and market demand.
+
+##  How to Run
+
+1. Clone the repository:
+```bash
+git clone https://github.com/vadlaakash-2004/driveworth-ml-project.git
+cd driveworth-ml-project
+```
+2. Install the required libraries:
+```blash
+pip install -r requirements.txt
+```
+3.Run the prediction script:
+```blash
+python src/predict_price.py
+```
+##  1️ Project Structure
+
+```markdown
+ Project Structure
+
+car-price-prediction/
+│
+├── data/
+├── notebook/
+├── model/
+├── src/
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+## Conclusion
+
+This project demonstrates an end-to-end machine learning pipeline for predicting used car prices. By comparing multiple models and selecting CatBoost as the best performer, the model achieves high accuracy and strong generalization.
+
+The project also highlights real-world challenges such as dataset bias and missing features, which affect prediction accuracy for newer vehicles.
+##  Future Improvements
+
+- Deploy as a Streamlit web application  
+- Improve feature engineering  
+- Use log transformation of target  
+- Collect more recent data  
+- Handle unseen categories better
+## Author
+
+Akash Vadla  
+M.Sc Data Science Student  
+RWTH Aachen University
